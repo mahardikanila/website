@@ -15,45 +15,22 @@
 </head>
 <body>
 
-<!--Header-part-->
-<div id="header">
-  <img src="img/logo-orang.png" alt="" style="height:70px; width:70px; margin-left:5%;">
-</div>
-<!--close-Header-part-->
 
+  <!--Header-part-->
+  <?php include 'header.php';?>
 
-<!--top-Header-menu-->
-<div id="user-nav" class="navbar navbar-inverse">
-  <ul class="nav">
-    <li  class="dropdown" id="profile-messages" ><a title="" href="#" data-toggle="dropdown" data-target="#profile-messages" class="dropdown-toggle"><i class="icon icon-user"></i>  <span class="text">Welcome User</span><b class="caret"></b></a>
-      <ul class="dropdown-menu">
-        <li><a href="#"><i class="icon-user"></i> My Profile</a></li>
-      </ul>
-    </li>
+  <?php include 'navbar.php';?>
+  <!--sidebar-menu-->
 
-    <li class=""><a title="" href="login.html"><i class="icon icon-share-alt"></i> <span class="text">Logout</span></a></li>
-  </ul>
-</div>
-<!--close-top-Header-menu-->
-<!--start-top-serch-->
+  <!--main-container-part-->
+  <div id="content">
+  <!--breadcrumbs-->
+    <div id="content-header">
+      <div id="breadcrumb"></div>
+      <h1>Pembayaran</h1>
+    </div>
+  <!--End-breadcrumbs-->
 
-<!--close-top-serch-->
-<!--sidebar-menu-->
-<div id="sidebar"><a href="#" class="visible-phone"><i class="icon icon-home"></i> Dashboard</a>
-  <ul>
-    <li ><a href="index.html"><i class="icon icon-plus-sign"></i> <span>Pendaftaran</span></a> </li>
-    <li><a href="data-pasien.html"><i class="icon icon-book"></i> <span>Data Pasien</span></a> </li>
-    <li class="active"><a href="pembayaran.html"><i class="icon icon-book"></i> <span>Pembayaran</span></a> </li>
-  </ul>
-</div>
-<!--sidebar-menu-->
-
-<!--main-container-part-->
-<div id="content">
-  <div id="content-header">
-    <div id="breadcrumb"> <a href="index.html" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a> <a href="#" class="tip-bottom">Rekam Medik</a> <a href="#" class="current">Tambah Keluhan & Tindakan</a> </div>
-    <h1>Pembayaran</h1>
-  </div>
   <div class="container-fluid">
     <hr>
     <div class="row-fluid">
@@ -66,14 +43,14 @@
       <div class="span3">
             <label class="control-label">Physioterapist:&nbsp; Zona Wibowo</label>
       </div>
-      <div class="span12">
+      <div class="span11">
         <div class="widget-box">
           <div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
             <h5>Formulir Pembayaran</h5>
           </div>
 
           <div class="widget-content nopadding">
-            <form action="rekam-medik.html" method="post" class="form-horizontal">
+            <form action="rekam-medik.php" method="post" class="form-horizontal">
               <div class="control-group">
                 <label class="control-label">ID Pasien :</label>
                 <div class="controls">
@@ -103,6 +80,16 @@
                 <label class="control-label">Jumlah Pembayaran :</label>
                 <div class="controls">
                   <input type="number" class="span8" />
+                </div>
+              </div>
+              <div class="control-group">
+                <label class="control-label">Metode Pembayaran :</label>
+                <div class="controls">
+                  <select class="span2" name="metode-pembayaran">
+                    <option value="1">Cash</option>
+                    <option value="2">Debet</option>
+                    <option value="3">Transfer</option>
+                  </select>
                 </div>
               </div>
               <div class="form-actions">

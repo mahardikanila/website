@@ -15,44 +15,16 @@
 </head>
 <body>
 
-<!--Header-part-->
-<div id="header">
-  <img src="img/logo-orang.png" alt="" style="height:70px; width:70px; margin-left:5%;">
-</div>
-<!--close-Header-part-->
+<?php include 'header.php';?>
 
-
-<!--top-Header-menu-->
-<div id="user-nav" class="navbar navbar-inverse">
-  <ul class="nav">
-    <li  class="dropdown" id="profile-messages" ><a title="" href="#" data-toggle="dropdown" data-target="#profile-messages" class="dropdown-toggle"><i class="icon icon-user"></i>  <span class="text">Welcome User</span><b class="caret"></b></a>
-      <ul class="dropdown-menu">
-        <li><a href="#"><i class="icon-user"></i> My Profile</a></li>
-      </ul>
-    </li>
-
-    <li class=""><a title="" href="login.html"><i class="icon icon-share-alt"></i> <span class="text">Logout</span></a></li>
-  </ul>
-</div>
-<!--close-top-Header-menu-->
-<!--start-top-serch-->
-
-<!--close-top-serch-->
-<!--sidebar-menu-->
-<div id="sidebar"><a href="#" class="visible-phone"><i class="icon icon-home"></i> Dashboard</a>
-  <ul>
-    <li class="active"><a href="index.html"><i class="icon icon-plus-sign"></i> <span>Pendaftaran</span></a> </li>
-    <li><a href="data-pasien.html"><i class="icon icon-book"></i> <span>Data Pasien</span></a> </li>
-    <li><a href="pembayaran.html"><i class="icon icon-book"></i> <span>Pembayaran</span></a> </li>
-  </ul>
-</div>
+<?php include 'navbar.php';?>
 <!--sidebar-menu-->
 
 <!--main-container-part-->
 <div id="content">
 <!--breadcrumbs-->
   <div id="content-header">
-    <div id="breadcrumb"> <a href="index.html" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a></div>
+    <div id="breadcrumb"></div>
   </div>
 <!--End-breadcrumbs-->
 
@@ -61,7 +33,7 @@
     <div class="quick-actions_homepage">
       <ul class="quick-actions">
 	       <div id="search"></div>
-        <li class="bg_lb"> <a href="tambah-pasien.html"> <i class="icon-plus"></i>Tambah Pasien</a> </li>
+        <li class="bg_lb"> <a href="tambah-pasien.php"> <i class="icon-plus"></i>Tambah Pasien</a> </li>
         <li class="bg_lg" data-toggle = "modal" data-target = "#myModal"> <a href="#"> <i class="icon-search"></i> Cari Pasien</a> </li>
       </ul>
     </div>
@@ -92,7 +64,7 @@
             <button type = "button" class = "btn btn-default" data-dismiss = "modal">
                Close
             </button>
-            <a href="rekam-medik.html">
+            <a href="rekam-medik.php">
               <button type = "button" class = "btn btn-primary">
                 <i class="icon-search"></i>
                  Search

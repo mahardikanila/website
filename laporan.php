@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Keluhan & Tindakan - Physiopreneur</title>
+<title>Laporan - Physiopreneur</title>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -18,45 +18,21 @@
 </head>
 <body>
 
-<!--Header-part-->
-<div id="header">
-  <img src="img/logo-orang.png" alt="" style="height:70px; width:70px; margin-left:5%;">
-</div>
-<!--close-Header-part-->
+  <!--Header-part-->
+  <?php include 'header.php';?>
 
+  <?php include 'navbar.php';?>
+  <!--sidebar-menu-->
 
-<!--top-Header-menu-->
-<div id="user-nav" class="navbar navbar-inverse">
-  <ul class="nav">
-    <li  class="dropdown" id="profile-messages" ><a title="" href="#" data-toggle="dropdown" data-target="#profile-messages" class="dropdown-toggle"><i class="icon icon-user"></i>  <span class="text">Welcome User</span><b class="caret"></b></a>
-      <ul class="dropdown-menu">
-        <li><a href="#"><i class="icon-user"></i> My Profile</a></li>
-      </ul>
-    </li>
-
-    <li class=""><a title="" href="login.html"><i class="icon icon-share-alt"></i> <span class="text">Logout</span></a></li>
-  </ul>
-</div>
-<!--close-top-Header-menu-->
-<!--start-top-serch-->
-
-<!--close-top-serch-->
-<!--sidebar-menu-->
-<div id="sidebar"><a href="#" class="visible-phone"><i class="icon icon-home"></i> Dashboard</a>
-  <ul>
-    <li><a href="index.html"><i class="icon icon-plus-sign"></i> <span>Pendaftaran</span></a> </li>
-    <li><a href="data-pasien.html"><i class="icon icon-book"></i> <span>Data Pasien</span></a> </li>
-    <li><a href="pembayaran.html"><i class="icon icon-book"></i> <span>Pembayaran</span></a> </li>
-  </ul>
-</div>
-<!--close-left-menu-stats-sidebar-->
-
-<div id="content">
-  <div id="content-header">
-    <div id="breadcrumb"> <a href="index.html" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a> <a href="#" class="tip-bottom">Rekam Medik</a> <a href="#" class="current">Tambah Keluhan & Tindakan</a> </div>
-    <h1>Tambah Keluhan & Tindakan</h1>
-  </div>
-  <div class="container-fluid">
+  <!--main-container-part-->
+  <div id="content">
+  <!--breadcrumbs-->
+    <div id="content-header">
+      <div id="breadcrumb"></div>
+      <h1>Laporan</h1>
+    </div>
+  <!--End-breadcrumbs-->
+  <!-- <div class="container-fluid">
     <hr>
     <div class="row-fluid">
       <div class="span10">
@@ -91,13 +67,13 @@
                 </div>
               </div>
               <div class="form-actions">
-                      <span class="pull-right"><a type="submit" href="rekam-medik.html" class="btn btn-success" /> Simpan</a></span>
+                      <span class="pull-right"><a type="submit" href="rekam-medik.php" class="btn btn-success" /> Simpan</a></span>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 </div>
 <!--Footer-part-->
 

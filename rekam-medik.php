@@ -15,43 +15,21 @@
 </head>
 <body>
 
-<!--Header-part-->
-<div id="header">
-  <img src="img/logo-orang.png" alt="" style="height:70px; width:70px; margin-left:5%;">
-</div>
-<!--close-Header-part-->
+  <!--Header-part-->
+  <?php include 'header.php';?>
 
+  <?php include 'navbar.php';?>
+  <!--sidebar-menu-->
 
-<!--top-Header-menu-->
-<div id="user-nav" class="navbar navbar-inverse">
-  <ul class="nav">
-    <li  class="dropdown" id="profile-messages" ><a title="" href="#" data-toggle="dropdown" data-target="#profile-messages" class="dropdown-toggle"><i class="icon icon-user"></i>  <span class="text">Welcome User</span><b class="caret"></b></a>
-      <ul class="dropdown-menu">
-        <li><a href="#"><i class="icon-user"></i> My Profile</a></li>
-      </ul>
-    </li>
+  <!--main-container-part-->
+  <div id="content">
+  <!--breadcrumbs-->
+    <div id="content-header">
+      <div id="breadcrumb"></div>
+      <h1>Rekam Medik</h1>
+    </div>
+  <!--End-breadcrumbs-->
 
-    <li class=""><a title="" href="login.html"><i class="icon icon-share-alt"></i> <span class="text">Logout</span></a></li>
-  </ul>
-</div>
-<!--close-top-Header-menu-->
-<!--start-top-serch-->
-
-<!--close-top-serch-->
-<!--sidebar-menu-->
-<div id="sidebar"><a href="#" class="visible-phone"><i class="icon icon-home"></i> Dashboard</a>
-  <ul>
-    <li><a href="index.html"><i class="icon icon-plus-sign"></i> <span>Pendaftaran</span></a> </li>
-    <li><a href="data-pasien.html"><i class="icon icon-book"></i> <span>Data Pasien</span></a> </li>
-    <li><a href="pembayaran.html"><i class="icon icon-book"></i> <span>Pembayaran</span></a> </li>
-  </ul>
-</div>
-
-<div id="content">
-  <div id="content-header">
-    <div id="breadcrumb"> <a href="#" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a> <a href="#" class="current">Rekam Medik</a> </div>
-    <h1>Rekam Medik</h1>
-  </div>
   <div class="container-fluid">
     <hr>
     <div class="row-fluid">
@@ -72,7 +50,7 @@
         <div class="span4"></div>
         <div class="span4">
           <div class="span3"></div>
-            <a href="tambah-keluhan-tindakan.html">
+            <a href="tambah-keluhan-tindakan.php">
               <button class="btn btn-info"><i class="icon icon-plus"></i> Rekam Medik</button>
             </a>
         </div>
