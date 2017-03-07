@@ -71,13 +71,23 @@
                 </div>
               </div>
               <div class="control-group">
-                <label class="control-label">Tindakan :</label>
+                <label class="control-label">Jenis Pembayaran :</label>
                 <div class="controls">
-                  <textarea class="span8" disabled=""></textarea>
+                  <select class="span2" name="jenis-pembayaran">
+                    <option value="1">Single Visit</option>
+                    <option value="2">5 Cares</option>
+                    <option value="3">10 Cares</option>
+                  </select>
                 </div>
               </div>
               <div class="control-group">
-                <label class="control-label">Jumlah Pembayaran :</label>
+                <label class="control-label"> + Regio :</label>
+                <div class="controls">
+                  <input type="number" min="0" class="span1" value="0" />
+                </div>
+              </div>
+              <div class="control-group">
+                <label class="control-label">Total Pembayaran :</label>
                 <div class="controls">
                   <input type="number" class="span8" />
                 </div>

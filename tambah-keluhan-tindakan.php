@@ -64,19 +64,19 @@
                 <label class="control-label">Tindakan</label>
                 <div class="controls">
                   <div class="span4">
-                    <label><input type="checkbox" name="radios" />Functional Exercise</label>
-                    <label><input type="checkbox" name="radios" />Tens/Es</label>
-                    <label><input type="checkbox" name="radios" />Infra Red</label>
+                    <label><input type="checkbox" name="radios" />Manual Therapy</label>
+                    <label><input type="checkbox" name="radios" />Infrared</label>
+                    <label><input type="checkbox" name="radios" />Laser</label>
                   </div>
                   <div class="span4">
                     <label><input type="checkbox" name="radios" />Functional Exercise</label>
-                    <label><input type="checkbox" name="radios" />Tens/Es</label>
-                    <label><input type="checkbox" name="radios" />Infra Red</label>
+                    <label><input type="checkbox" name="radios" />Hot / Ice</label>
+                    <label><input type="checkbox" name="radios" />Ultrasound Dithermy</label>
                   </div>
                   <div class="span4">
-                    <label><input type="checkbox" name="radios" />Functional Exercise</label>
                     <label><input type="checkbox" name="radios" />Tens/Es</label>
-                    <label><input type="checkbox" name="radios" /><input type="text" name="others" placeholder="Other" class="span8"/></label>
+                    <label><input type="checkbox" name="radios" />Gym</label>
+                    <label><input type="checkbox" name="radios" />Drill</label>
                   </div>
                 </div>
               </div>
